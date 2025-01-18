@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Untitled</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Safety</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <header>
+        <img src=" Healthy.png" alt="Logo" style="width: 300px; height: auto;">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="Write for us.html">Write for us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h2>Welcome to Health and Safety</h2>
+        <p>Your trusted source for health and wellness.</p>
+        <img src=" health-safety-training-cardiff-bristol.jpg" alt="Logo" style="width: 300px; height: auto;">
+        <button onclick="showTips()">Get Health Tips</button>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2 style="font-size:30px; text-align:center;">Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                 <img style="width: 33%;" src="ALLIANCE-general-consultation-desk-meeting-2017-01.jpg"alt="Logo" style="width: 300px; height: auto;""Consultation">
+		 <img style="width: 33%;" src="personalized-nutrition-Large.jpeg"alt="Logo" style="width: 300px; height: auto;""Nutrition Plans">
+		 <img style="width: 33%;" src="The-Beginner’s-Guide-to-Becoming-a-Fitness-Coach-e1641900914502.webp"alt="Logo" style="width: 300px; height: auto;""Fitness Coaching">
+		 
+                <h3>Consultation</h3>
+                <p>Book a one-on-one consultation with our experts.</p>
+            </div>
+            <div class="service-item">
+
+                <h3 style="font-size:20px; text-align:center;">Nutrition Plans</h3>
+                <p style="font-size:20px; text-align:center;">Customized meal plans to suit your health goals.</p>
+            </div>
+            <div class="service-item">
+                
+                <h3 style="font-size:20px; text-align:center;">Fitness Coaching</h3>
+                <p style="font-size:20px; text-align:center;">Get fit with personalized workout plans.</p>
+		
+		
+           <main>
+       
+        </section>
+
+       
+		
+    <!-- Health Tips Section -->
+    <section id="tips">
+        <h2>Health Tips</h2>
+        <ul id="tips-list">
+            <!-- Tips will be loaded here by JavaScript -->
+        </ul>
+    </section>
+
+
+    <!-- JavaScript for dynamic health tips -->
+    <script>
+        function showTips() {
+            const tips = [
+                "Drink plenty of water to stay hydrated.",
+                "Exercise regularly to maintain physical fitness.",
+                "Eat a balanced diet rich in fruits and vegetables.",
+                "Get at least 7-8 hours of sleep each night.",
+                "Take breaks to reduce stress and relax your mind.",
+                "Avoid sugary drinks, and try to reduce your intake of processed foods.",
+                "Wash your hands frequently to prevent the spread of germs.",
+                "Practice good posture to protect your spine and prevent back pain.",
+                "Manage your stress levels through mindfulness or meditation.",
+                "Don't skip breakfast – it boosts your metabolism and energy levels.",
+                "Quit smoking to significantly improve your lung and heart health.",
+                "Limit your alcohol intake to maintain your liver health.",
+                "Take regular short walks during long periods of sitting to improve circulation.",
+                "Include healthy fats like avocado and nuts in your diet.",
+                "Stretch regularly to maintain flexibility and prevent injury.",
+                "Get regular health check-ups to catch potential problems early.",
+                "Spend time outdoors to boost your mood and vitamin D levels.",
+                "Stay socially active to maintain good mental health and happiness.",
+                "Laugh more – it's a great stress reliever and can improve your immune system.",
+                "Avoid overuse of electronic devices to protect your eyes and mental well-being."
+            ];
+
+            const tipsList = document.getElementById("tips-list");
+            tipsList.innerHTML = ""; // Clear any existing tips
+
+            tips.forEach(function(tip) {
+                let li = document.createElement("li");
+                li.textContent = tip;
+                tipsList.appendChild(li);
+            });
+        }
+    </script>
+
+</body>
+</html>
+ <footer>
+        <p>&copy; 2024 Health and Safety. All rights reserved.</p>
+    </footer>
+</body>
+</html>
